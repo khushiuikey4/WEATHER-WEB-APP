@@ -218,3 +218,97 @@ body {
 .transparent-background {
     background: transparent;
 }
+
+@media (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .card,
+    .weather-details {
+        width: 90vw;
+        max-width: 420px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .city {
+        height: auto;
+        min-height: 50px;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .other-details {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 94vw;
+        height: auto;
+        min-height: 92px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 47px;
+    }
+
+    .search-inp {
+        width: calc(100% - 65px);
+        padding: 8px;
+    }
+
+    .search-icon {
+        width: 47px;
+        margin-left: 8px;
+        flex-shrink: 0;
+    }
+
+    .weather-details {
+        width: 94vw;
+    }
+
+    .weather-visual {
+        width: 150px;
+        height: 152px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .temperature {
+        width: 100%;
+    }
+
+    .other-details {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .first {
+        height: auto;
+    }
+}
